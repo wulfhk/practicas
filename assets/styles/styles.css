@@ -1,0 +1,106 @@
+/* styles.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif; /* Modern, clean font */
+  background-color: #212529; /* Dark, sophisticated background */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #292c30; /* Slightly lighter background for contrast */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.sidebar:hover {
+  background-color: #24272b; /* Darker shade on hover */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f2f2f2; /* Light background for content */
+  transition: all 0.3s ease-in-out; /* Smooth content transition */
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  color: #fff; /* White text for headings */
+  font-weight: 300; /* Light weight for a modern look */
+  transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out; /* Smooth list item transition */
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover background */
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff; /* White text for links */
+  font-size: 16px; /* Clear and readable font size */
+  transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
+
+.sidebar ul li a:hover {
+  color: #007bff; /* Blue accent on hover */
+}
+
+/* Additional styles for tables, buttons, etc. (optional) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* Light border for tables */
+  padding: 8px;
+  text-align: left;
+  color: #333; /* Dark text for tables */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 10px 20px; /* More generous padding for buttons */
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue background for buttons */
+  color: #fff; /* White text for buttons */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  transition: all 0.3s ease-in-out; /* Smooth button transitions */
+}
+
+button:hover {
+  background-color: #0069cc; /* Darker shade on hover */
+}
+
+.stock-cero {
+  color: red;
+}
+

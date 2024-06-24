@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Almacén de Materiales - Sistema de Inventario</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="movimientos_almacen.html">Movimientos</a></li>
+                <li><a href="registro_movimientos.html">Registro de Movimientos</a></li>
+                <li><a href="almacen.html">Almacenes</a></li>
+                <li><a href="proveedores.html">Proveedores</a></li>
+                <li><a href="materiales.html">Materiales</a></li>    
+                <li><a href="almacen_material.html">Materiales</a></li> 
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Gestión de Almacén de Materiales</h1>
+            <button id="btnAgregarMaterial">Agregar Material a Almacén</button>
+            <div id="stock_disponible"></div>
+            <table id="tablaAlmacenMaterial">
+                <thead>
+                    <tr>
+                        <th>ID Material</th>
+                        <th>Material</th>
+                        <th>Almacén</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos de los materiales en almacenes se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="assets/js/almacen_material.js"></script>
+</body>
+</html>

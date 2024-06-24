@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Movimientos - Sistema de Inventario</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="movimientos_almacen.html">Movimientos</a></li>
+                <li><a href="registro_movimientos.html">Registro de Movimientos</a></li>
+                <li><a href="almacen.html">Almacenes</a></li>
+                <li><a href="proveedores.html">Proveedores</a></li>
+                <li><a href="materiales.html">Materiales</a></li>    
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Registro de Movimientos</h1>
+            <table id="tablaRegistroMovimientos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Material</th>
+                        <th>Almacén</th>
+                        <th>Tipo</th>
+                        <th>Docente</th>
+                        <th>Fecha</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos de todos los movimientos se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="assets/js/registro_movimientos.js"></script>
+</body>
+</html>

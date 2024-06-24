@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos de Almacén - Sistema de Inventario</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <!-- ... (menú lateral) ... -->
+        </nav>
+        <main class="content">
+            <div class="almacen-selector">
+                <select id="selectAlmacen">
+                    <option value="">Seleccione un almacén</option>
+                    <!-- Las opciones se cargarán dinámicamente -->
+                </select>
+            </div>
+            <h1 id="tituloAlmacen">Movimientos de Almacén</h1>
+            
+            <form id="formSalida">
+                <h2>Registrar Salida</h2>
+                <select id="selectMaterial" required>
+                    <option value="">Seleccione un material</option>
+                    <!-- Las opciones se cargarán dinámicamente -->
+                </select>
+                <input type="number" id="cantidadSalida" min="1" required placeholder="Cantidad">
+                <input type="text" id="docente" required placeholder="Nombre del docente">
+                <input type="text" id="sesionAprendizaje" required placeholder="Sesión de aprendizaje">
+                <input type="text" id="grado" required placeholder="Grado">
+                <input type="text" id="seccion" required placeholder="Sección">
+                <input type="number" id="numEstudiantes" min="1" required placeholder="Número de estudiantes">
+                <select id="nivel" required>
+                    <option value="">Seleccione el nivel</option>
+                    <option value="primario">Primario</option>
+                    <option value="secundario">Secundario</option>
+                </select>
+                <button type="submit">Registrar Salida</button>
+            </form>
+
+            <h2>Salidas Activas</h2>
+            <table id="tablaSalidas">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Cantidad</th>
+                        <th>Docente</th>
+                        <th>Sesión</th>
+                        <th>Grado</th>
+                        <th>Sección</th>
+                        <th>Estudiantes</th>
+                        <th>Nivel</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las filas se cargarán dinámicamente -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="assets/js/movimientos_almacen.js"></script>
+</body>
+</html>
